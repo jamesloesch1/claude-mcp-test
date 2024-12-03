@@ -13,20 +13,17 @@
             --nav-height: 70px;
             --max-width: 1000px;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
         }
-
         nav {
             background-color: var(--bg-color);
             height: var(--nav-height);
@@ -36,7 +33,6 @@
             width: 100%;
             z-index: 1000;
         }
-
         .nav-container {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -46,67 +42,55 @@
             height: 100%;
             padding: 0 20px;
         }
-
         .name {
             font-size: 1.5rem;
             font-weight: 600;
             color: var(--primary-color);
             text-decoration: none;
         }
-
         .nav-links {
             display: flex;
             gap: 2rem;
         }
-
         .nav-links a {
             text-decoration: none;
             color: var(--primary-color);
             font-weight: 500;
             transition: color 0.3s ease;
         }
-
         .nav-links a:hover {
             color: var(--accent-color);
         }
-
         main {
             max-width: var(--max-width);
             margin: var(--nav-height) auto 0;
             padding: 40px 20px;
         }
-
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: var(--primary-color);
         }
-
         h2 {
             font-size: 2rem;
             margin: 2rem 0 1rem;
             color: var(--primary-color);
         }
-
         p {
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
         }
-
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
                 padding: 10px;
             }
-
             .nav-links {
                 gap: 1rem;
             }
-
             nav {
                 height: auto;
             }
-
             main {
                 margin-top: 100px;
             }
